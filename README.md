@@ -8,7 +8,7 @@ The goal of ch is to solve some questions.
 
 ## Installation
 
-You can install the released version of ch :
+You can install  ch :
 
 ``` r
 devtools::install_github('tsiamut/ch')
