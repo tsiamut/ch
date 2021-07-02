@@ -2,7 +2,7 @@
 % Please edit documentation in R/show_color.R
 \name{show_color}
 \alias{show_color}
-\title{some examples about ggplot2}
+\title{An easy way to show in ggplot2}
 \usage{
 show_color(
   colors,
@@ -30,11 +30,10 @@ show_color(
 \item{border}{about the border}
 }
 \description{
-different examples
-}
-\details{
-some examples about ggplot2
+the same function can see
+\code{\link[scales]{show_col}}, but it is a
+ggplot2 object.
 }
 \author{
-tsia
+Chai
 }

@@ -18,5 +18,5 @@ read the strings and transform to
 the data.frame
 }
 \author{
-tsia
+Chai
 }

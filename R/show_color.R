@@ -1,5 +1,7 @@
-#' some examples about ggplot2
-#' @description different examples
+#' @title An easy way to show in ggplot2
+#' @description the same function can see
+#'  \code{\link[scales]{show_col}}, but it is a
+#'  ggplot2 object.
 #' @param  ncol the number f col
 #' @param byrow logical
 #' @param colors string about colors
@@ -7,14 +9,12 @@
 #' @param number logical
 #' @param size the size of label
 #' @param border about the border
-#' @title some examples about ggplot2
+
 #' @export  show_color
 #' @importFrom  ggplot2 ggplot geom_text geom_rect  geom_label
 #'   theme_void
 #' @importFrom grDevices rgb2hsv  col2rgb
-#' @author tsia
-
-
+#' @author Chai
 #++++++++++++++++++++++++++
 show_color <- function(colors, ncol,byrow = T,label = F,number = F,
                        size = 1, border = 'black') {

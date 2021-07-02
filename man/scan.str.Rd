@@ -16,3 +16,6 @@ Read data into a vector  from a string.
 m <- '12 23 45 78 90 89 97'
 scan.str(m)
 }
+\author{
+Chai
+}

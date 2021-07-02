@@ -1,13 +1,14 @@
 #' @title about csv2vcf
-#' @description The easiest way to generate vcf files.
-#' @param csv_file the csv file to choose.
-#' @param vcf_file  save the vcf file.
-#' @param header for more see \code{\link[utils]{read.csv}}
+#' @description A simple method to generate VCF generate vcf files.
+#' @param csv_file The csv file contains
+#' names and  phone numbers.
+#' @param vcf_file The vcf file to create.
+#' @param header For more see \code{\link[utils]{read.csv}}
 #' @export
 csv2vcf <- function(csv_file,vcf_file, header = F){
      csvvcf(csv_file,vcf_file, header = header)
         }
-#' @author tsia
+#' @author Chai
 #' @importFrom utils read.csv write.table
 
 csvvcf <- function(csv_file,vcf_file, header = F){

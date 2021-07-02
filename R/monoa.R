@@ -10,9 +10,9 @@ monoa <- function(ka,c,digits = 2){
   mono(ka,c,digits = digits,T)
 }
 
-#' @title Calculate The pH
+#' @rdname monoa
 #' @description Calculate the pH of weak bases.
-#' @param  ka 	ionization constant
+#' @param  ka ionization constant
 #' @param  c concentration
 #' @param  digits digit
 #' @examples
@@ -21,8 +21,14 @@ monoa <- function(ka,c,digits = 2){
 monob <- function(ka,c,digits = 2){
   mono(ka,c,digits = digits, F)
 }
-#' @author tsia
+#' @author Chai
 
+
+#' @rdname monoa
+#' @export
+#' @param  acid if TRUE, it is equivalent
+#' to monoa function; if FALSE, it is
+#' equivalent to monob function.
 mono <- function(ka,c,digits = 2,acid = T){
   kw <- 1e-14
   while(ka*c >= 20*kw  &  c/ka >= 500){

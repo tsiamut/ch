@@ -1,15 +1,12 @@
-#' some examples about ggplot2
-#' @description different examples
+#' @title use ggplot to draw ruler
+#' @description draw a ruler
 #' @param len the length of ruler
-#' @title some examples about ggplot2
-#' @export  draw_ruler
 #' @importFrom  ggplot2 ggplot geom_text geom_rect  geom_label
 #' geom_linerange  annotate theme_void aes
-#' @author tsia
-
-
-draw_ruler <- function(len = 5) {
-  len <- ceiling(len)
+#' @author Chai
+#' @export
+show_ruler <- function(len = 5) {
+  len <- floor(len)
   d1 <-  data.frame(x = 1:len,
                    y = rep(c(0,2),each = len)
   )
@@ -22,8 +19,8 @@ draw_ruler <- function(len = 5) {
   d4 <- data.frame(x = seq(0.05,len,0.1),
                    y = rep(c(0,2),each = len * 10)
   )
-  d5 <- data.frame(x = 1:len,
-                   y = 1)
+  x = 1:len
+  y = 1
   h <- 0.6
   h1 <- 0.3
   h2 <- 0.45
@@ -42,22 +39,14 @@ draw_ruler <- function(len = 5) {
                    d3)  +
     geom_linerange(aes(x =x,ymin = y, ymax = y + y3),
                    d4) +
-    geom_text(aes(x = x,y = y,label = x),
-              size = 13,family = 'heiti',
-              d5) +
-    annotate('text',x = 0.5, y = 1.5,label = '0.5mm') +
+    geom_text(aes(x,y,label = x),
+              family = 'sans',
+              size = 10, color = 'brown') +
+    annotate('text',x = 0.5, y = 1.5,
+             label = '0.5mm') +
     annotate('text',x = 0.25,y = 0.45,
              label = 'mm') +
     theme_void() -> p
-  if (len %/% 5 >= 0) {
-    l <- len %/% 5
-    f <- data.frame(x = 1:l * 5,
-                    y = 1)
-    p <- p +
-      geom_text(aes(x = x,y = y,label = x),
-                size = 13,family = 'heiti',
-                color = 'brown',
-                data = f)
-  }
   return(p)
 }
+

@@ -1,15 +1,18 @@
-#' some examples about ggplot2
-#' @description different examples
-#' @title some examples about ggplot2
+#' some examples about chemistry
+#' @description use ggplot2 to draw the periodic table
+#' @title draw the periodic table
 #' @export  period_table
 #' @importFrom  ggplot2 ggplot geom_text geom_rect  geom_label
 #' geom_linerange  annotate theme_void  scale_y_reverse
 #' scale_fill_discrete  scale_colour_discrete ggtitle
 #' guides  element_text aes  theme  guide_legend
-#' @author tsia
+#' @author Chai
 
 
-period_table  <- function(){
+period_table <- function(){
+  per_table()
+}
+per_table  <- function(){
   ele <- c("H ",  "He",
            "Li","Be","B ", "C ", "N ","O ","F ","Ne",
            "Na","Mg","Al", "Si", "P ", "S ","Cl", "Ar",
@@ -74,8 +77,8 @@ period_table  <- function(){
              label = c('LA','AC'),
              hjust = 0.5,vjust = 0.5) +
     scale_y_reverse() +
-    theme_void()  -> p1
-  p1 + scale_fill_discrete(NULL,
+    theme_void()   +
+    scale_fill_discrete(NULL,
                            type =   list (c('#F1D4AF',
                                             '#EAEAEA','#A6CEE3','#1F78B4',
                                             '#E08D49','#999D9A','#D93B43',
@@ -96,6 +99,7 @@ period_table  <- function(){
       plot.title = element_text(
         hjust = 0.05, vjust = -0.3
       )
-    )
+    ) -> p1
+  return(p1)
 }
 

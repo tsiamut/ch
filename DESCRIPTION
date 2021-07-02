@@ -1,21 +1,25 @@
 Package: ch
-Title: About Chemical Methods
-Version: 0.0.6
-Date: 2020-09-13
-Authors@R: 
-    person(given = "Yi",
-           family = "Tsia",
-           role = c("aut", "cre"),
-           email = "tsiamut@gmail.com")
-Author: Yi Tsia [aut,cre]
-Depends: R (>= 4.0.0)
-Description: Some  small functions. Some functions to chem.
-License: MIT + file LICENSE
-Imports: magrittr, ggplot2
+Type: Package
+Title: About some Small Methods
+Version: 0.0.8.0
+Author: Hailong Chai [aut]
+Maintainer: Hailong Chai <chaihl17@lzu.edu.cn>
+Description: The solution to some common problems is proposed, 
+     as well as a summary of some small functions.In particular, 
+     it provides a useful function for some problems in chemistry.
+Imports:
+  ggplot2,
+  readr,
+  Ryacas,
+  dplyr,
+  magrittr,
+  utils,
+  grDevices
+Suggests:
+  xtable,
+  patchwork
+License: Artistic-2.0
 Encoding: UTF-8
-LazyData: true
+URL: https://github.com/tsiamut/ch
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
-NeedsCompilation: no
-Packaged: 2020-09-13 03:44:28 UTC; Tsia
-Maintainer: Yi Tsia <tsiamut@gmail.com>

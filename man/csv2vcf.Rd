@@ -7,12 +7,13 @@
 csv2vcf(csv_file, vcf_file, header = F)
 }
 \arguments{
-\item{csv_file}{the csv file to choose.}
+\item{csv_file}{The csv file contains
+names and  phone numbers.}
 
-\item{vcf_file}{save the vcf file.}
+\item{vcf_file}{The vcf file to create.}
 
-\item{header}{for more see \code{\link[utils]{read.csv}}}
+\item{header}{For more see \code{\link[utils]{read.csv}}}
 }
 \description{
-The easiest way to generate vcf files.
+A simple method to generate VCF generate vcf files.
 }

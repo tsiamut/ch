@@ -2,16 +2,16 @@
 % Please edit documentation in R/element.R
 \name{period_table}
 \alias{period_table}
-\title{some examples about ggplot2}
+\title{draw the periodic table}
 \usage{
 period_table()
 }
 \description{
-different examples
+use ggplot2 to draw the periodic table
 }
 \details{
-some examples about ggplot2
+some examples about chemistry
 }
 \author{
-tsia
+Chai
 }
