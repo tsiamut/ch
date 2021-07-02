@@ -8,10 +8,10 @@ The goal of ch is to solve some questions.
 
 ## Installation
 
-You can install the released version of ch from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of ch :
 
 ``` r
-install.packages("ch")
+devtools::install_github('tsiamut/ch')
 ```
 
 ## Example
