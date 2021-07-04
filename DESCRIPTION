@@ -1,7 +1,7 @@
 Package: ch
 Type: Package
 Title: About some Small Methods
-Version: 0.0.8.0
+Version: 0.1.0.0
 Author: Hailong Chai [aut]
 Maintainer: Hailong Chai <chaihl17@lzu.edu.cn>
 Description: The solution to some common problems is proposed, 
@@ -14,12 +14,15 @@ Imports:
   dplyr,
   magrittr,
   utils,
-  grDevices
-Suggests:
-  xtable,
-  patchwork
+  grDevices,
+  MASS,
+  crayon
+Suggests: xtable
 License: Artistic-2.0
 Encoding: UTF-8
 URL: https://github.com/tsiamut/ch
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+ByteCompile: true
+NeedsCompilation: yes
+Packaged: 2021-07-04 07:13:45 UTC; Chai
