@@ -1,12 +1,12 @@
 
 # ch 0.1.0.2 
-Fixed errors about console (), lat_fmt() and state_1() functions.
+Fix bugs in console_cl(), lat_fmt() and state_1() functions.
 
 New functions are provided:
  sym2poly() and sym2coef() 
  
 
-# ch 0.0.7
+# ch 0.1.0.0
 
 
 ## some functions
