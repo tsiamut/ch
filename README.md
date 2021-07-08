@@ -11,6 +11,8 @@ The goal of ch is to solve some questions.
 You can install  ch :
 
 ``` r
+install.packages('ch')
+# or from github
 devtools::install_github('tsiamut/ch')
 ```
 
@@ -25,5 +27,9 @@ library(ch)
 draw_ruler(5)
 ## And even draw  the periodic table.
 period_table()
+show_color(colors())
+sym2poly('x*4 + x^4 + 5*x^7 + x*x^9')
 ```
+
+
 
