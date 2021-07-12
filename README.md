@@ -3,7 +3,8 @@
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/ch)](https://CRAN.R-project.org/package=ch)
-[![R-CMD-check](https://github.com/passing/workflows/R-CMD-check/badge.svg)](https://github.com/passing/actions)
+<!-- badges: end -->
+
 <!-- badges: end -->
 
 The goal of ch is to solve some questions.
