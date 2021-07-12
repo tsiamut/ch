@@ -1,7 +1,7 @@
 Package: ch
 Type: Package
 Title: About some Small Functions
-Version: 0.1.0.2
+Version: 0.1.1.0
 Author: Hailong Chai [aut]
 Maintainer: Hailong Chai <chaihl17@lzu.edu.cn>
 Description: The solution to some common problems is proposed, 
@@ -27,7 +27,8 @@ Imports:
   polynom,
   pracma,
   Ryacas,
-  utils
+  utils,
+  stats
 Suggests: scales
 SystemRequirements: ImageMagick(>=7.1.0) https://imagemagick.org
 License: Artistic-2.0

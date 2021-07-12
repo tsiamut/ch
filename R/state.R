@@ -8,6 +8,8 @@
 #' stat("p3")
 #' stat("f3")
 #' @importFrom magrittr %>%
+#' @importFrom stats xtabs
+#' @importFrom utils combn
 #' @export
 
 stat <- function(x) {
@@ -36,9 +38,9 @@ stat <- function(x) {
   ms <- rep(c(0.5, -0.5), 2 * l - 1)
   ll <- (l - 1):-(l - 1)
   ml <- rep(ll, each = 2)
-  Ms <- combn(ms, n, sum)
-  Ml <- combn(ml, n, sum)
-  xtabs(~ Ml + Ms) -> d1 # cross table
+  Ms <- utils::combn(ms, n, sum)
+  Ml <- utils::combn(ml, n, sum)
+  stats::xtabs(~ Ml + Ms) -> d1 # cross table
   ###########################
   state_f1(d1) -> d2
   d2[nrow(d2):1, ncol(d2):1] -> d3 # rev!

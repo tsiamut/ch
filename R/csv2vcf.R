@@ -21,7 +21,7 @@ csv2vcf <- function(csv_file, vcf_file, header = FALSE) {
 #' @importFrom utils read.csv write.table
 
 csvvcf <- function(csv_file, vcf_file, header = FALSE) {
-  a <- read.csv(csv_file, header = header)
+  a <- utils::read.csv(csv_file, header = header)
   b <- list(
     "BEGIN:VCARD", "VERSION:3.0",
     NA, NA, "END:VCARD"
@@ -32,7 +32,7 @@ csvvcf <- function(csv_file, vcf_file, header = FALSE) {
     for (i in 1:nrow(a)) {
       b[3] <- paste("FN:", a[i, 1])
       b[4] <- paste("TEL;TYPE=CELL:", a[i, 2])
-      write.table(b, vcf_file,
+      utils::write.table(b, vcf_file,
         append = TRUE, sep = "\n",
         row.names = FALSE, col.names = FALSE,
         quote = FALSE,

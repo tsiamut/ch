@@ -42,6 +42,7 @@ latex_fmt <- function(x) {
 #' the var of '3*x^2 + x^6 + x*8 + x*5^2' is 'x'.
 #' @examples
 #' sym2poly("3*x^2 + x^5 + x*8")
+#' sym2poly("3*x^2 + x^5 + 2*x^5")
 #' @export
 sym2poly <- \(x, var = "x") {
   if (class(x) == "character") {
@@ -54,7 +55,7 @@ sym2poly <- \(x, var = "x") {
   }
   x %>%
     y_fn("Degree", var) -> h0
-    paste0("0 .. ", h0) -> h1
+  paste0("0 .. ", h0) -> h1
   x %>%
     y_fn("Coef", var, h1) %>%
     as_r() -> x1
@@ -73,20 +74,20 @@ sym2poly <- \(x, var = "x") {
 
 #' @rdname sym2poly
 #' @export
- sym2coef <- function(x,var = 'x'){
-   if (class(x) == "character") {
-     x <- Ryacas::ysym(x)
-   } else if (class(x) == "yac_symbol") {
-     x <- x
-   }
-   else {
-     return("x must be polynomial character or yac_symbol")
-   }
-   x %>%
-     y_fn("Degree", var) -> h0
-   paste0("0 .. ", h0) -> h1
-   x %>%
-     y_fn("Coef", var, h1) %>%
-     as_r() -> x1
-   x1
- }
+sym2coef <- function(x, var = "x") {
+  if (class(x) == "character") {
+    x <- Ryacas::ysym(x)
+  } else if (class(x) == "yac_symbol") {
+    x <- x
+  }
+  else {
+    return("x must be polynomial character or yac_symbol")
+  }
+  x %>%
+    y_fn("Degree", var) -> h0
+  paste0("0 .. ", h0) -> h1
+  x %>%
+    y_fn("Coef", var, h1) %>%
+    as_r() -> x1
+  x1
+}

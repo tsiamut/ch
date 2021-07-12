@@ -9,7 +9,7 @@
 #' where the output is, and to cancel the > on the original line.
 #' Finally, the result of the run is saved to the clipboard.
 #' @param  prefix  The prefix for code.The default is '#>'.
-#' You can edit it according to your own preference, but 
+#' You can edit it according to your own preference, but
 #'  '#' should be  the first character.
 #' @return  the result of the run is saved to the clipboard.
 #' @export
@@ -30,18 +30,18 @@ console_cl <- function(prefix = "#>") {
   }
   a <- clipr::read_clip()
   if (is.character(a) == T) {
-    cat(bold("text from the clipboard:\n"))
-    blue(a) %>% cat("\n")
+    cat(crayon::bold("text from the clipboard:\n"))
+    crayon::blue(a) %>% cat("\n")
     pre_1 <- substr(prefix, 1, 1)
     if (pre_1 == "#") {
       pref <- prefix
     } else {
       pref <- paste0("#", prefix)
-      message(yellow(paste0("prefix:", pref, "\n")))
+      message(crayon::yellow(paste0("prefix:", pref, "\n")))
     }
     sapply(a, str_a, pref = pref) %>%
       cat(file = "clipboard")
-    cat(bold("Output -> clipboard,please check it."))
+    cat(crayon::bold("Output -> clipboard,please check it."))
   }
   else {
     return("Clipboard is wrong!")

@@ -28,6 +28,7 @@ the \code{\link[pracma]{polyroots}} function.
 }
 \examples{
 sym2poly("3*x^2 + x^5 + x*8")
+sym2poly("3*x^2 + x^5 + 2*x^5")
 }
 \author{
 Chai
