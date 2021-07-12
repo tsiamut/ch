@@ -3,7 +3,7 @@
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/ch)](https://CRAN.R-project.org/package=ch)
-![](http://cranlogs.r-pkg.org/badges/ch?color=blue)
+![](http://cranlogs.r-pkg.org/badges/grand-total/ch?color=blue)
 ![](http://cranlogs.r-pkg.org/badges/ch?color=blue)
 ![](http://cranlogs.r-pkg.org/badges/last-week/ch?color=blue)
 <!-- badges: end -->
