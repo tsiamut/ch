@@ -3,8 +3,9 @@
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/ch)](https://CRAN.R-project.org/package=ch)
-<!-- badges: end -->
-
+![](http://cranlogs.r-pkg.org/badges/ch?color=blue)
+![](http://cranlogs.r-pkg.org/badges/ch?color=blue)
+![](http://cranlogs.r-pkg.org/badges/last-week/ch?color=blue)
 <!-- badges: end -->
 
 The goal of ch is to solve some questions.
