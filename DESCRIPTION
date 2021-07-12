@@ -18,17 +18,18 @@ Description: The solution to some common problems is proposed,
      The sym2poly() and sym2coef() function can extract coefficients from 
      polynomials.
 Imports:
-  ggplot2,
   clipr,
-  Ryacas,
-  magrittr,
-  utils,
+  crayon,
+  ggplot2,
   grDevices,
   MASS,
-  crayon,
+  magrittr,
   polynom,
-  pracma
+  pracma,
+  Ryacas,
+  utils
 Suggests: scales
+SystemRequirements: ImageMagick(>=7.1.0) https://imagemagick.org
 License: Artistic-2.0
 Language: en-US
 Encoding: UTF-8
