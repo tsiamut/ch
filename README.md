@@ -1,6 +1,11 @@
 
 # ch
 
+
+<!-- badges: start -->
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/ch)](https://cran.r-project.org/package=ch)
+<!-- badges: end -->
+
 <!-- badges: start -->
 <!-- badges: end -->
 
