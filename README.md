@@ -1,6 +1,6 @@
 
 # ch
-# bookofmut <a  href=''><img  src='man/figure/wu.svg' align="right" height="120" /></a>
+# bookofmut <a  href=''><img  src='man/figure/wu.png' align="right" height="120" /></a>
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/ch)](https://CRAN.R-project.org/package=ch)
@@ -10,9 +10,15 @@
 ![](http://cranlogs.r-pkg.org/badges/ch?color=blue)
 ![](http://cranlogs.r-pkg.org/badges/last-week/ch?color=blue)
 [![License: Artistic-2.0](https://img.shields.io/badge/license-Artistic--2.0-blue.svg)](https://cran.r-project.org/web/licenses/Artistic-2.0)
+
+
+
 <!-- badges: end -->
 
 The goal of ch is to solve some questions.
+
+follow me at: 
+<a  href=''><img  src='man/figure/wuan.png' align="right" height="120" /></a>
 
 ## Installation
 
