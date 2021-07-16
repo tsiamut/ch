@@ -1,9 +1,10 @@
 
 # ch
-# bookofmut <a  href=''><img src='man/figure/wu.svg' align="right" height="140" /></a>
+# bookofmut <a  href=''><imgsrc='man/figure/wu.svg' align="right" height="120" /></a>
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/ch)](https://CRAN.R-project.org/package=ch)
+[![R-CMD-check](https://github.com/tisamut/ch/workflows/R-CMD-check/badge.svg)](https://github.com/tsiamut/ch/actions)
 ![](http://cranlogs.r-pkg.org/badges/grand-total/ch?color=blue)
 ![](http://cranlogs.r-pkg.org/badges/ch?color=blue)
 ![](http://cranlogs.r-pkg.org/badges/last-week/ch?color=blue)
