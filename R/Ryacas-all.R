@@ -44,7 +44,7 @@ latex_fmt <- function(x) {
 #' sym2poly("3*x^2 + x^5 + x*8")
 #' sym2poly("3*x^2 + x^5 + 2*x^5")
 #' @export
-sym2poly <- \(x, var = "x") {
+sym2poly <- function(x, var = "x") {
   if (class(x) == "character") {
     x <- Ryacas::ysym(x)
   } else if (class(x) == "yac_symbol") {
