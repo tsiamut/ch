@@ -1,6 +1,6 @@
 
 # ch
-# bookofmut <a  href=''><imgsrc='man/figure/wu.svg' align="right" height="120" /></a>
+# bookofmut <a  href=''><img src='man/figure/wu.svg' align="right" height="120" /></a>
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/ch)](https://CRAN.R-project.org/package=ch)
