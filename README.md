@@ -6,13 +6,11 @@
 [![CRAN status](https://www.r-pkg.org/badges/version/ch)](https://CRAN.R-project.org/package=ch)
 [![](https://img.shields.io/badge/devel%20version-0.1.1.0-blue.svg)](https://github.com/tsiamut/ch) <br>
 [![R build status](https://github.com/tsiamut/ch/workflows/R-CMD-check/badge.svg)](https://github.com/tsiamut/ch/actions)
+[![License: Artistic-2.0](https://img.shields.io/badge/license-Artistic--2.0-blue.svg)](https://cran.r-project.org/web/licenses/Artistic-2.0)
+<br>
 ![](http://cranlogs.r-pkg.org/badges/grand-total/ch?color=blue)
 ![](http://cranlogs.r-pkg.org/badges/ch?color=blue)
 ![](http://cranlogs.r-pkg.org/badges/last-week/ch?color=blue)
-[![License: Artistic-2.0](https://img.shields.io/badge/license-Artistic--2.0-blue.svg)](https://cran.r-project.org/web/licenses/Artistic-2.0)
-
-
-
 <!-- badges: end -->
 
 The goal of ch is to solve some questions.
