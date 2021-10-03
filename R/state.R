@@ -7,7 +7,6 @@
 #' stat("p2")
 #' stat("p3")
 #' stat("f3")
-#' @importFrom magrittr %>%
 #' @importFrom stats xtabs
 #' @importFrom utils combn
 #' @export
@@ -19,7 +18,7 @@ stat <- function(x) {
   )
   mm <- tolower(M)
   l <- which(substr(x, 1, 1) == mm)
-  n <- substring(x, 2) %>% as.numeric()
+  n <- as.numeric( substring(x,2)  )
   N <- (2*l - 1)*2
   if (n > N) {
     return(paste0('warning: n >= ',N))
@@ -46,18 +45,18 @@ stat <- function(x) {
   d2[nrow(d2):1, ncol(d2):1] -> d3 # rev!
   # col&row-names
   #########
-  d3[1, ] %>%
-    as.matrix() %>%
-    t() -> a1
+  t( as.matrix(d3[1,])
+     ) -> a1
+  ##########
   rownames(a1) <- rownames(d3)[1]
   diff(d3) -> a2
   rbind(a1, a2) -> m
   #############
-  m[, 1] %>% as.matrix() -> m1
+  as.matrix( m[,1] ) -> m1
   Nc <- ncol(m)
   m2 <- NULL
   if (Nc > 2) {
-    apply(m, 1, diff) %>% t() -> m2
+    t( apply(m, 1, diff) ) -> m2
   } else {
     apply(m, 1, diff) -> m2
   }

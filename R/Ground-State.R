@@ -14,14 +14,16 @@
 #'  spectral term of equal electrons.
 #' @rdname  ground_state
 #' @export ground_state
+
 ground_state <- function(x) {
   orbital <- c("S", "P", "D", "F", "G", "H", "I", "K", "L", "M", "N", "O")
   l <- which(substr(x, 1, 1) == tolower(orbital))
 
-  n <- substring(x, 2) %>% as.numeric()
+  n <-  as.numeric( substring(x, 2) )
   kh(l, n) -> m
   k <- MASS::as.fractions(m[3])
-  paste0(m[1], "^", orbital[m[2] + 1], "_", k) %>% noquote()
+  lp <- paste0(m[1], "^", orbital[m[2] + 1], "_", k)
+  noquote(lp)
 }
 
 
@@ -173,7 +175,7 @@ FG_1 <- function(x) {
   )
   mm <- tolower(m2)
   l <- which(substr(x, 1, 1) == mm) - 1
-  n <- substring(x, 2) %>% as.numeric()
+  n <-  as.numeric( substring(x, 2) )
   FG(l, n)
 }
 ################

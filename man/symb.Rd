@@ -4,12 +4,10 @@
 \alias{symb}
 \title{Generating multiple symbols at once}
 \usage{
-symb(..., envir = parent.frame(), quite = FALSE)
+symb(..., quite = FALSE)
 }
 \arguments{
 \item{...}{The multiple vectors.}
-
-\item{envir}{The environment.}
 
 \item{quite}{If FALSE, it will show the message in the end.}
 }

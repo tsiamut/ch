@@ -26,7 +26,6 @@ latex_fmt <- function(x) {
 
 #' @title Extracting coefficients from polynomials
 #' @importFrom  Ryacas ysym y_fn as_r
-#' @importFrom magrittr %>%
 #' @importFrom pracma polyroots
 #' @importFrom  polynom polynomial
 #' @author Chai
@@ -53,17 +52,16 @@ sym2poly <- function(x, var = "x") {
   else {
     return("x must be polynomial character or yac_symbol")
   }
-  x %>%
-    y_fn("Degree", var) -> h0
+  
+  y_fn(x,"Degree", var) -> h0
   paste0("0 .. ", h0) -> h1
-  x %>%
-    y_fn("Coef", var, h1) %>%
-    as_r() -> x1
+  y_fn(x,"Coef", var, h1) -> lin
+    as_r(lin) -> x1
   polynom::polynomial(x1) -> p1
-  x1 %>% polyroot() -> y1
-  x1 %>%
-    rev() %>%
-    pracma::polyroots() -> y2
+  polyroot(x1) -> y1
+  
+  pracma::polyroots( rev(x1) ) -> y2
+  ##### return
   list(
     coeffs = x1,
     polynomial = p1,
@@ -83,11 +81,10 @@ sym2coef <- function(x, var = "x") {
   else {
     return("x must be polynomial character or yac_symbol")
   }
-  x %>%
-    y_fn("Degree", var) -> h0
+
+  y_fn(x,"Degree", var) -> h0
   paste0("0 .. ", h0) -> h1
-  x %>%
-    y_fn("Coef", var, h1) %>%
-    as_r() -> x1
+  y_fn(x,"Coef", var, h1) -> lin_2
+  as_r(lin_2) -> x1
   x1
 }

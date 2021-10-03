@@ -4,7 +4,7 @@
 .onAttach <- function(libname, pkgname) {
    
   packageStartupMessage(
-    yellow("Welcome to ch package\n"),
+    magenta("Welcome to ch package\n"),
     blue(" Some  functions about ch:\n"),
     cyan("   show_color(), ggpng(), plot_table()\n"),
     cyan("   showruler(), period_table(), symb()\n"),

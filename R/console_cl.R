@@ -2,7 +2,6 @@
 #' add '#' to the run result.
 #' @author  Chai
 #' @importFrom clipr read_clip
-#' @importFrom  magrittr %>%
 #' @importFrom crayon bold blue
 #' @description First you need to copy the console area to the clipboard,
 #' then run the console_cl() function to add a comment to the line
@@ -31,7 +30,7 @@ console_cl <- function(prefix = "#>") {
   a <- clipr::read_clip()
   if (is.character(a) == T) {
     cat(crayon::bold("text from the clipboard:\n"))
-    crayon::blue(a) %>% cat("\n")
+    cat( crayon::blue(a), "\n")
     pre_1 <- substr(prefix, 1, 1)
     if (pre_1 == "#") {
       pref <- prefix
@@ -39,8 +38,8 @@ console_cl <- function(prefix = "#>") {
       pref <- paste0("#", prefix)
       message(crayon::yellow(paste0("prefix:", pref, "\n")))
     }
-    sapply(a, str_a, pref = pref) %>%
-      cat(file = "clipboard")
+    cat( sapply(a, str_a, pref = pref),
+      file = "clipboard")
     cat(crayon::bold("Output -> clipboard,please check it."))
   }
   else {
