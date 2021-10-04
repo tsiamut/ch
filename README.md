@@ -9,7 +9,7 @@
 ![](http://cranlogs.r-pkg.org/badges/grand-total/ch?color=blue)
 ![](http://cranlogs.r-pkg.org/badges/ch?color=blue)
 ![](http://cranlogs.r-pkg.org/badges/last-week/ch?color=blue)
-[![License: Artistic-2.0](https://img.shields.io/badge/license-Artistic--2.0-blue.svg)](https://cran.r-project.org/web/licenses/Artistic-2.0)
+[![License: GPL-3](https://img.shields.io/badge/license-Artistic--2.0-blue.svg)](https://cran.r-project.org/web/licenses/GPL-3)
 
 
 
