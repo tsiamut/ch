@@ -4,12 +4,12 @@
 .onAttach <- function(libname, pkgname) {
    
   packageStartupMessage(
-    magenta("Welcome to ch package\n"),
-    blue(" Some  functions about ch:\n"),
-    cyan("   show_color(), ggpng(), plot_table()\n"),
-    cyan("   showruler(), period_table(), symb()\n"),
-    cyan("   csv2vcf(), lat_fmt(), ground_state()\n"),
-    cyan("   stat(), sym2poly()\n")
+    crayon::magenta("Welcome to ch package\n"),
+    crayon::blue(" Some  functions about ch:\n"),
+    crayon::cyan("   show_color(), ggpng(), plot_table()\n"),
+    crayon::cyan("   showruler(), period_table(), symb()\n"),
+    crayon::cyan("   csv2vcf(), lat_fmt(), ground_state()\n"),
+    crayon::cyan("   stat(), sym2poly()\n")
   )
 }
 
