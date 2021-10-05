@@ -2,7 +2,6 @@
 
 #### Package-Loading Information ####
 .onAttach <- function(libname, pkgname) {
-   
   packageStartupMessage(
     crayon::magenta("Welcome to ch package\n"),
     crayon::blue(" Some  functions about ch:\n"),
