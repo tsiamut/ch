@@ -5,7 +5,6 @@
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/ch)](https://CRAN.R-project.org/package=ch)
 [![](https://img.shields.io/badge/devel%20version-0.1.2-blue.svg)](https://github.com/tsiamut/ch)
-[![R build status](https://github.com/tsiamut/ch/workflows/R-CMD-check/badge.svg)](https://github.com/tsiamut/ch/actions)
 [![License: GPL-3](https://img.shields.io/badge/license-GPL--3-blue.svg)](https://cran.r-project.org/web/licenses/GPL-3)
 <!-- badges: end -->
 
