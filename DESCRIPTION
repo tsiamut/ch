@@ -19,7 +19,6 @@ Description: The solution to some common problems is proposed,
      polynomials.
 Imports:
   clipr,
-  crayon,
   ggplot2,
   grDevices,
   MASS,
