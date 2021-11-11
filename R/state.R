@@ -7,10 +7,11 @@
 #' stat("p2")
 #' stat("p3")
 #' stat("f3")
+#' stat('d4')
 #' @importFrom stats xtabs
 #' @importFrom utils combn
 #' @export
-
+x = 'd4'
 stat <- function(x) {
   M <- c(
     "S", "P", "D", "F", "G", "H", "I", "K",
@@ -77,7 +78,7 @@ state_f1 <- function(d1) {
   nr <- nrow(d1)
   nc <- ncol(d1)
   b <- NULL
-  if (nc %/% 2 == 1) {
+  if (nc %% 2 == 1) {
     b <- ((nc - 1) / 2 + 1):nc
   } else {
     b <- ((nc / 2) + 1):nc
